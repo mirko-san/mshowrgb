@@ -7,15 +7,15 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug executable 'mswhowrgb'",
+      "name": "Debug executable 'mshowrgb'",
       "cargo": {
         "args": [
           "build",
-          "--bin=mswhowrgb",
-          "--package=mswhowrgb"
+          "--bin=mshowrgb",
+          "--package=mshowrgb"
         ],
         "filter": {
-          "name": "mswhowrgb",
+          "name": "mshowrgb",
           "kind": "bin"
         }
       },
@@ -25,16 +25,16 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug unit tests in executable 'mswhowrgb'",
+      "name": "Debug unit tests in executable 'mshowrgb'",
       "cargo": {
         "args": [
           "test",
           "--no-run",
-          "--bin=mswhowrgb",
-          "--package=mswhowrgb"
+          "--bin=mshowrgb",
+          "--package=mshowrgb"
         ],
         "filter": {
-          "name": "mswhowrgb",
+          "name": "mshowrgb",
           "kind": "bin"
         }
       },

@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "mswhowrgb"
+name = "mshowrgb"
 version = "0.1.0"
