@@ -1,0 +1,4 @@
+[toolchain]
+channel = "nightly"
+target = "stable-x86_64-unknown-linux-gnu"
+profile = "minimal"
