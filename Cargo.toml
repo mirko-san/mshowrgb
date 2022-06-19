@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["mirko-san https://github.com/mirko-san"]
 license = "MIT"
+description = "show rgb by mirko"
 repository = "https://github.com/mirko-san/mswhowrgb"
 
 [dependencies]
