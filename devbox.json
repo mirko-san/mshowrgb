@@ -1,0 +1,24 @@
+{
+    "packages": [
+        "rustup@latest",
+        "libiconv@latest"
+    ],
+    "shell": {
+        "init_hook": [
+            "projectDir=$(dirname $(readlink -f \"$0\"))",
+            "rustupHomeDir=\"$projectDir\"/.rustup",
+            "mkdir -p $rustupHomeDir",
+            "export RUSTUP_HOME=$rustupHomeDir",
+            "export LIBRARY_PATH=$LIBRARY_PATH:\"$projectDir/nix/profile/default/lib\"",
+            "rustup toolchain install 1.26.0",
+            "rustup default 1.26.0",
+            "cargo fetch"
+        ],
+        "scripts": {
+            "test": "cargo test -- --show-output",
+            "start" : "cargo run",
+            "build-docs": "cargo doc"
+        }
+    }
+}
+
