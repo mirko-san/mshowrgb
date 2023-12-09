@@ -9,12 +9,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install latest Rust lang
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: nightly
-          override: true
-
       - name: Information rustc
         run: rustc --version
 
@@ -22,6 +16,4 @@ jobs:
         run: cargo --version
 
       - name: Run cargo check
-        uses: actions-rs/cargo@v1
-        with:
-          command: check
+        run: cargo check
