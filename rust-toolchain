@@ -1,4 +1,4 @@
 [toolchain]
-channel = "nightly"
-target = "stable-x86_64-unknown-linux-gnu"
-profile = "minimal"
+channel = "1.26.0"
+target = "1.26.0-x86_64-unknown-linux-gnu"
+
